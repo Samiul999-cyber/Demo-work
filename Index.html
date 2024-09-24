@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link--Css -->
+    <link rel="stylesheet" href="Css/Style.Css">
+    <!-- link--fav-icon -->
+     <link rel="shortcut icon" href="Img/folder.png" type="image/x-icon">
+    <title> Profile</title>
+    <!-- Bottstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--====== Bootstrap CSS ======-->
+<link
+rel="stylesheet"
+href="https://cdn.ayroui.com/1.0/css/bootstrap.min.css"
+/>
+
+<!--====== Lineicons CSS ======-->
+<link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet" />
+
+<!--====== Style css ======-->
+<link rel="stylesheet" href="https://cdn.ayroui.com/1.0/css/starter.css" />
+</head>
+<body>
+    <section>
+          <!--====== COMING SOON PART START ======-->
+<section
+class="
+coming-soon-area coming-soon-one
+d-flex
+align-items-center
+bg_cover
+"
+style="background-image: url(https://cdn.ayroui.com/1.0/images/coming-soon/background.png)"
+>
+<div class="container">
+   <div class="row justify-content-center">
+      <div class="col-lg-8">
+         <div class="coming-soon-content text-center">
+            <div class="countdown">
+               <ul id="countdown-example">
+                  <li>
+                     <span class="count days">29</span>
+                     <p class="text days_text">Days</p>
+                  </li>
+                  <li>
+                     <span class="count hours">53</span>
+                     <p class="text hours_text">Hours</p>
+                  </li>
+                  <li>
+                     <span class="count minutes">34</span>
+                     <p class="text minutes_text">Minutes</p>
+                  </li>
+                  <li>
+                     <span class="count seconds">08</span>
+                     <p class="text seconds_text">Seconds</p>
+                  </li>
+               </ul>
+            </div>
+            <h2 class="coming-soon-title">coming soon</h2>
+            <div class="coming-soon-btn rounded-buttons">
+               <ul>
+                  <li>
+                     <a
+                        href="javascript:void(0)"
+                        class="btn primary-btn-outline rounded-full"
+                        >
+                     LEARN MORE
+                     </a>
+                  </li>
+                  <li>
+                     <a
+                        href="javascript:void(0)"
+                        class="btn primary-btn rounded-full"
+                        >
+                     GET NOTIFY
+                     </a>
+                  </li>
+               </ul>
+            </div>
+            <!-- rounded-buttons -->
+         </div>
+         <!-- coming soon content -->
+      </div>
+   </div>
+   <!-- row -->
+</div>
+<!-- container -->
+</section>
+<!--====== COMING SOON PART ENDS ======-->
+<script>
+// ====== date countdown
+const end = new Date("December 16, 2024 00:00:00").getTime();
+//const end = new Date("November 09, 2020 00:00:00").getTime();
+const dayEl = document.querySelector(".days");
+const hoursEl = document.querySelector(".hours");
+const minutesEl = document.querySelector(".minutes");
+const secondsEl = document.querySelector(".seconds");
+const seconds = 1000;
+const minutes = seconds * 60;
+const hours = minutes * 60;
+const days = hours * 24;
+
+const x = setInterval(function () {
+  let now = new Date().getTime();
+  const difference = end - now;
+
+  if (difference < 0) {
+    clearInterval(x);
+    document.getElementById("done").innerHTML = "We're married! ðŸŽ‰";
+    return;
+  }
+
+  dayEl.innerText = Math.floor(difference / days);
+  hoursEl.innerText = Math.floor((difference % days) / hours);
+  minutesEl.innerText = Math.floor((difference % hours) / minutes);
+  secondsEl.innerText = Math.floor((difference % minutes) / seconds);
+}, seconds);
+</script>
+
+<!--====== Tiny Slider Css ======-->
+<link rel="stylesheet" href="https://cdn.ayroui.com/1.0/css/tiny-slider.css" />
+
+<!--====== SLIDER THREE PART START ======-->
+
+ <section class="slider-three">
+   <div class="container">
+     <div class="row justify-content-center">
+       <div class="col-lg-6">
+         <div class="section-title text-center">
+           <h3 class="title">Friendly & Easy</h3>
+           <p class="text">
+             Stop wasting time and money designing and managing a website
+             that doesn’t get results. Happiness guaranteed!
+           </p>
+         </div>
+         <!-- section title -->
+       </div>
+     </div>
+     <!-- row -->
+
+     <div class="slider-items-wrapper">
+       <div class="row slider-items-active">
+         <div class="col-lg-4">
+           <div class="single-items-one">
+             <img src="Img/10b34e7b6973db5fa9d74dd9dab2db82.png" alt="Image" />
+           </div>
+           <!-- single-items-one -->
+         </div>
+         <div class="col-lg-4">
+           <div class="single-items-one">
+             <img src="Img/6c2a8ac53ebb97818e3468a8d01919a7.png" alt="Image" />
+           </div>
+           <!-- single-items-one -->
+         </div>
+         <div class="col-lg-4">
+           <div class="single-items-one">
+             <img src="Img/8dbcf0f67b697ae71a312dedad4da47a.png" alt="Image" />
+           </div>
+           <!-- single-items-one -->
+         </div>
+         <div class="col-lg-4">
+           <div class="single-items-one">
+             <img src="Img/c1fb16b974693031a87ef131aca009e7.png" alt="Image" />
+           </div>
+           <!-- single-items-one -->
+         </div>
+         <div class="col-lg-4">
+            <div class="single-items-one">
+              <img src="Img/c867ca1538e7dd116a5830a45f1da193.png" alt="Image" />
+            </div>
+            <!-- single-items-one -->
+          </div>
+       </div>
+       <!-- row -->
+     </div>
+   </div>
+   <!-- container -->
+ </section>
+
+ <!--====== SLIDER THREE PART ENDS ======-->
+
+ <!--====== Tiny Slider js ======-->
+ <script src="https://cdn.ayroui.com/1.0/js/tiny-slider.js"></script>
+
+<script>
+     //======== tiny slider for slider-items-active
+     tns({
+        autoplay: true,
+        autoplayButtonOutput: false,
+        mouseDrag: true,
+        gutter: 0,
+        container: ".slider-items-active",
+        center: false,
+        nav: true,
+        navPosition: "bottom",
+        controls: false,
+        speed: 400,
+        controlsText: [
+           '<i class="lni lni-arrow-left-circle"></i>',
+           '<i class="lni lni-arrow-right-circle"></i>',
+        ],
+        responsive: {
+           0: {
+              items: 1,
+           },
+
+           768: {
+              items: 2,
+           },
+           992: {
+              items: 3,
+           },
+        },
+     });
+  </script>
+
+<!--====== SIGNIN ONE PART START ======-->
+<section class="signin-area signin-one">
+    <div class="container">
+       <div class="row justify-content-center">
+          <div class="col-lg-5">
+             <form action="#">
+                <div class="signin-form form-style-two rounded-buttons">
+                   <div class="row">
+                      <div class="col-md-12">
+                         <div class="form-input">
+                            <label>Your account will be under this email</label>
+                            <div class="input-items default">
+                               <input type="text" placeholder="Email" />
+                               <i class="lni lni-envelope"></i>
+                            </div>
+                         </div>
+                         <!-- form input -->
+                      </div>
+                      <div class="col-md-12">
+                         <div class="form-input">
+                            <label>
+                            Name will be used to personalize your experience
+                            </label>
+                            <div class="input-items default">
+                               <input type="text" placeholder="Name" />
+                               <i class="lni lni-user"></i>
+                            </div>
+                         </div>
+                         <!-- form input -->
+                      </div>
+                      <div class="col-md-12">
+                         <div class="form-input">
+                            <label>Password for your account</label>
+                            <div class="input-items default">
+                               <input type="password" placeholder="Password" />
+                               <i class="lni lni-key"></i>
+                            </div>
+                         </div>
+                         <!-- form input -->
+                      </div>
+                      <div class="col-md-6">
+                         <div class="form-input rounded-buttons">
+                            <button
+                               class="btn primary-btn rounded-full"
+                               type="submit"
+                               >
+                            Sign In!
+                            </button>
+                         </div>
+                         <!-- form input -->
+                      </div>
+                      <div class="col-md-6">
+                         <div class="form-input rounded-buttons">
+                           <a href="https://www.facebook.com/profile.php?id=100068657407837&mibextid=ZbWKwL">
+                              <button
+                              class="btn primary-btn-outline rounded-full"
+                              type="submit"
+                              >
+                           Sign Up
+                           </button>
+                           </a>
+                         </div>
+                         <!-- form input -->
+                      </div>
+                      <div class="col-md-12">
+                         <div class="form-input text-center">
+                            <p class="text">
+                               By signing in you agree with the
+                               <a href="javascript:void(0)">Terms and Conditions</a>
+                               and
+                               <a href="javascript:void(0)">Privacy</a>
+                            </p>
+                         </div>
+                         <!-- form input -->
+                      </div>
+                   </div>
+                </div>
+                <!-- signin form -->
+             </form>
+          </div>
+       </div>
+       <!-- row -->
+    </div>
+    <!-- container -->
+ </section>
+ <!--====== SIGNIN ONE PART ENDS ======-->
+
+
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
